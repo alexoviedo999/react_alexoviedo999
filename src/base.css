@@ -1,5 +1,6 @@
 
 @import 'blk';
+@import 'basscss';
 @import 'basscss-base-forms';
 @import 'basscss-input-range';
 @import 'basscss-color-forms';
@@ -10,5 +11,10 @@
 .no-select { user-select: none }
 
 :root {
+	--font-family: 'Avenir Next', 'Hevletica Neue', sans-serif;
+}
+
+.headline {
+	font-size: 70px;
 }
 

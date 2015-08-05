@@ -3,6 +3,7 @@ import React from 'react'
 var Router = require('react-router')
 import About from './About.jsx'
 var Link = Router.Link
+import { LinkBtn } from 'rebass'
 
 class Header extends React.Component {
 
@@ -14,20 +15,21 @@ class Header extends React.Component {
 
     return (
       <header className={headerClass}>
-      <div className="left">
-          <button className="btn btn-outline mb1">
-              <Link to='/'>Home</Link>
-          </button>
-          <button className="btn btn-outline mb1">
-            <Link to='/about'>About Me</Link>
-          </button>
-        </div>
-        <div className='flex-auto center italic bold px2 mb2'>
-          <h1 className='m0'>
+        
+        <div className='flex-auto center px2 mb2'>
+          <h1 className='m0 headline'>
             {this.props.name}
             <span className='h4'> v{this.props.version}</span>
           </h1>
           <p className='m0'>{this.props.description}</p>
+          <div className="left">
+          <h4>
+            <span className="m3"><a href="/" class="btn">Home</a></span>
+            <span><a href="/about" class="btn">About Me</a></span>
+            
+          </h4>
+
+        </div>
         </div>
         
         

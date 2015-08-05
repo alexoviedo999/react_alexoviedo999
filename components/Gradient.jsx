@@ -11,7 +11,6 @@ import BaseColor from './BaseColor.jsx'
 import TweetButton from './TweetButton.jsx'
 import { Footer } from 'blk'
 
-
 class Gradient extends React.Component {
 
   constructor () {
@@ -95,12 +94,12 @@ class Gradient extends React.Component {
       <div>
         <Background {...this.props} gradient={gradient} light={light}>
         <div className='px1 right'>
-          <TweetButton {...this.props} />
         </div>
           <Header {...this.props} light={light} />
           <RouteHandler {...this.props} />
           <div className='px2'>
             <Footer {...this.props} />
+            <TweetButton {...this.props} />
           </div>
         </Background>
         <div className='md-flex'>

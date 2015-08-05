@@ -22,6 +22,8 @@ module.exports = {
   cssnext: {
     compress: true,
     features: {
+      rem: false,
+      pseudoElements: false,
       colorRgba: false
     }
   },
