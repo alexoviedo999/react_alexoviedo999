@@ -1,13 +1,8 @@
 
 import React from 'react'
-var Router = require('react-router')
-var RouteHandler = Router.RouteHandler
-import { Footer } from 'blk'
 import css from '../src/base.css'
 import ga from '../src/ga'
 import Gradient from './Gradient.jsx'
-import Header from './Header.jsx'
-import About from './About.jsx'
 
 class Root extends React.Component {
 
@@ -27,11 +22,7 @@ class Root extends React.Component {
           <style dangerouslySetInnerHTML={{ __html: css }} />
         </head>
         <body>
-          <RouteHandler {...this.props} />
-          
-          <div className='px2'>
-            <Footer {...this.props} />
-          </div>
+          <Gradient {...this.props}/>
           <script
             id='initial-props'
             type='application/json'

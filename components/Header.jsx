@@ -1,7 +1,6 @@
 
 import React from 'react'
 var Router = require('react-router')
-import TweetButton from './TweetButton.jsx'
 import About from './About.jsx'
 var Link = Router.Link
 
@@ -15,18 +14,23 @@ class Header extends React.Component {
 
     return (
       <header className={headerClass}>
-        <div className='flex-auto px2 mb2'>
+      <div className="left">
+          <button className="btn btn-outline mb1">
+              <Link to='/'>Home</Link>
+          </button>
+          <button className="btn btn-outline mb1">
+            <Link to='/about'>About Me</Link>
+          </button>
+        </div>
+        <div className='flex-auto center italic bold px2 mb2'>
           <h1 className='m0'>
             {this.props.name}
             <span className='h4'> v{this.props.version}</span>
           </h1>
           <p className='m0'>{this.props.description}</p>
         </div>
-        <Link to='/'>Index</Link>
-        <Link to='/about'>About</Link>
-        <div className='px2'>
-          <TweetButton {...this.props} />
-        </div>
+        
+        
       </header>
     )
   }

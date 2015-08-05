@@ -1,11 +1,15 @@
 
 import React from 'react'
+var Router = require('react-router')
+var RouteHandler = Router.RouteHandler
 import _ from 'lodash'
 import Color from 'color'
 import qs from 'qs'
 import Background from './Background.jsx'
 import Header from './Header.jsx'
 import BaseColor from './BaseColor.jsx'
+import TweetButton from './TweetButton.jsx'
+import { Footer } from 'blk'
 
 
 class Gradient extends React.Component {
@@ -90,7 +94,14 @@ class Gradient extends React.Component {
     return (
       <div>
         <Background {...this.props} gradient={gradient} light={light}>
-          <Header {...this.props} light={light = true } />
+        <div className='px1 right'>
+          <TweetButton {...this.props} />
+        </div>
+          <Header {...this.props} light={light} />
+          <RouteHandler {...this.props} />
+          <div className='px2'>
+            <Footer {...this.props} />
+          </div>
         </Background>
         <div className='md-flex'>
           <div className='md-col-6 lg-col-5 px2'>

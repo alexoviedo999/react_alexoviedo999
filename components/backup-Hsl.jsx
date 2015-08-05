@@ -1,5 +1,3 @@
-// Seems to be unused
-
 var React = require('react');
 var Color = require('color');
 

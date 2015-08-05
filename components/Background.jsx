@@ -1,6 +1,5 @@
 
 import React from 'react'
-import { CarbonAd } from 'blk'
 
 class Background extends React.Component {
 
@@ -15,13 +14,10 @@ class Background extends React.Component {
 
     return (
       <div style={style} className='flex flex-column'>
-        <div className='p3'>
+        <div className='p1'>
           {this.props.children}
         </div>
         <div className='flex-auto'></div>
-        <div className='p1 right-align'>
-          <CarbonAd />
-        </div>
         <pre className={preClass}>background-image: {this.props.gradient};</pre>
       </div>
     )
