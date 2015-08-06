@@ -96,7 +96,7 @@ class Gradient extends React.Component {
         <div className='px1 right'>
         </div>
           <Header {...this.props} light={light} />
-          <RouteHandler {...this.props} />
+          <RouteHandler {...this.props} light={light} />
           <div className='px2'>
             <Footer {...this.props} />
             <TweetButton {...this.props} />

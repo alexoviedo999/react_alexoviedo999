@@ -10,6 +10,7 @@ class Root extends React.Component {
     let initialProps = {
       __html: safeStringify(this.props)
     }
+
     return (
       <html>
         <head>

@@ -18,3 +18,11 @@
 	font-size: 70px;
 }
 
+.nightBorder {
+	border-color: white;
+}
+
+.dayBorder {
+	border-color: red;
+}
+

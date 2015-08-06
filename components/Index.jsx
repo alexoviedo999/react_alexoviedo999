@@ -8,68 +8,48 @@ import { Media } from 'rebass'
 
 var Index = React.createClass({
   render: function () {
-
+  	let hoverCard = 'card bg-navy';
   	let ReactElement1 = <img src='http://placehold.it/300x200&text=slide1'/>;
     let ReactElement2 = <img src='http://placehold.it/40x40&text=slide1'/>;
 
+    let lightClass = 'p4 center'
+
+    lightClass += this.props.light ? ' navy' : ' silver'
+
+    let cardBorder = 'mb4'
+
+    cardBorder += this.props.light ? ' nightBorder' : ' dayBorder'
+
     return (
     	<div>
-	        <h1>home body</h1>
-
 	        <Row>
-				<Col
+				<Col 
 				sm={6}
 				md={4}>
-					<Card image={ReactElement1}>
-					  <Media
-					    middle={true}
-					    image={ReactElement2}>
-					    <h3 className="h4 m0">
-					      Nested Hamburger
-					    </h3>
-					  </Media>
+					<Card >
+					    <h1 className={lightClass}>
+					      About Me
+					    </h1>
 					</Card>
 				</Col>
 
 				<Col
 				sm={6}
 				md={4}>
-				<Card image={ReactElement1}>
-				  <Media
-				    middle={true}
-				    image={ReactElement2}>
-				    <h3 className="h4 m0">
-				      Nested Hamburger
-				    </h3>
-				  </Media>
+				<Card className={hoverCard}>
+				    <h1 className={lightClass}>
+				      Github
+				    </h1>
 				</Card>
 				</Col>
 
 				<Col
 				sm={6}
 				md={4}>
-					<Card image={ReactElement1}>
-					  <Media
-					    middle={true}
-					    image={ReactElement2}>
-					    <h3 className="h4 m0">
-					      Nested Hamburger
-					    </h3>
-					  </Media>
-					</Card>
-				</Col>
-
-				<Col
-				sm={6}
-				md={4}>
-					<Card image={ReactElement1}>
-					  <Media
-					    middle={true}
-					    image={ReactElement2}>
-					    <h3 className="h4 m0">
-					      Nested Hamburger
-					    </h3>
-					  </Media>
+					<Card className="card">
+					    <h1 className={lightClass}>
+					      Tumblr
+					    </h1>
 					</Card>
 				</Col>
 			</Row>
