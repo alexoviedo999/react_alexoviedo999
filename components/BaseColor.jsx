@@ -7,11 +7,19 @@ class BaseColor extends React.Component {
   constructor () {
     super ()
     this.state = {
+      base: '#0074D9',
+      hue: 120,
+      saturation: 100,
+      lightness: 60
+    }
+
+    {/*this.state = {
       base: '#00ccff',
       hue: 0,
       saturation: 0,
       lightness: 0
-    }
+    }*/}
+
     this.changeBase = this.changeBase.bind(this)
     this.changeHue = this.changeHue.bind(this)
     this.changeSaturation = this.changeSaturation.bind(this)

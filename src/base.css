@@ -16,6 +16,11 @@
 
 .headline {
 	font-size: 70px;
+	text-decoration: none;
+}
+
+.headline a:hover {
+	text-decoration: none;
 }
 
 .nightBorder {
@@ -24,5 +29,9 @@
 
 .dayBorder {
 	border-color: red;
+}
+
+.hideControls {
+	display: none;
 }
 

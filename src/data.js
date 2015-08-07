@@ -4,7 +4,7 @@ var pkg = require('../package.json')
 var data = {
   name: pkg.name,
   title: pkg.name,
-  href: '/shade',
+  href: '/about',
   version: pkg.version,
   description: pkg.description,
   keywords: pkg.keywords,
@@ -13,7 +13,7 @@ var data = {
     '/about'
   ],
   links: [
-    { href: '//github.com/jxnblk/shade', text: 'GitHub' }
+    { href: '//github.com/alexoviedo999', text: 'GitHub' }
   ]
 }
 

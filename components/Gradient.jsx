@@ -30,12 +30,21 @@ class Gradient extends React.Component {
       })
       window.history.pushState(this.state , '', '?' + params)
     }, 200)
-    this.state = {
+
+    {/*this.state = {
       base: '#00ccff',
       saturate: 0,
       lighten: 0,
       hueShift: 130,
       angle: -90
+    }*/}
+
+    this.state = {
+      base: '#0074D9',
+      saturate: 0,
+      lighten: 0.26,
+      hueShift: -20,
+      angle: 0
     }
   }
 
@@ -98,11 +107,11 @@ class Gradient extends React.Component {
           <Header {...this.props} light={light} />
           <RouteHandler {...this.props} light={light} />
           <div className='px2'>
-            <Footer {...this.props} />
-            <TweetButton {...this.props} />
+            {/*<Footer {...this.props} />*/}
+            {/*<TweetButton {...this.props} />*/}
           </div>
         </Background>
-        <div className='md-flex'>
+        <div className='md-flex hide hideControls'>
           <div className='md-col-6 lg-col-5 px2'>
             <BaseColor {...this.props}
               base={base}
@@ -146,9 +155,7 @@ class Gradient extends React.Component {
         </div>
       </div>
     )
-
   }
-
 }
 
 /*
