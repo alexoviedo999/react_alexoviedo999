@@ -9,8 +9,8 @@ var data = {
   description: pkg.description,
   keywords: pkg.keywords,
   routes: [
-    '/',
-    '/about'
+    'http://alexoviedo999.github.io/react_alexoviedo999/',
+    'http://alexoviedo999.github.io/react_alexoviedo999/about'
   ],
   links: [
     { href: '//github.com/alexoviedo999', text: 'GitHub' }
