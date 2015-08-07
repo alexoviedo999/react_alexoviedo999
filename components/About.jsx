@@ -1,12 +1,21 @@
 
 var React = require('react')
+import Header from './Header.jsx'
+import Color from 'color'
+
 
 var About = React.createClass({
   render: function () {
+
+    let style = {
+    	
+    }
+
     return (
-      <main>
-        <h1>About body</h1>
-      </main>
+      <div style={style} className=''>
+      	
+        <h1 className="blue">About Me</h1>
+      </div>
     )
   }
 })

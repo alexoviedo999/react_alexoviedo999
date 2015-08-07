@@ -104,7 +104,7 @@ class Gradient extends React.Component {
         <Background {...this.props} gradient={gradient} light={light}>
         <div className='px1 right'>
         </div>
-          <Header {...this.props} light={light} />
+          <Header {...this.props} light={light}/>
           <RouteHandler {...this.props} light={light} />
           <div className='px2'>
             {/*<Footer {...this.props} />*/}

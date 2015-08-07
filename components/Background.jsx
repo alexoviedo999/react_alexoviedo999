@@ -9,6 +9,14 @@ class Background extends React.Component {
       minHeight: '100vh',
       color: this.props.light ? 'black' : 'white'
     }
+    console.log('background: '+ this.props.path);
+
+    if(this.props.path == '/about') {
+      style.backgroundImage = 'none';
+      style.backgroundColor = 'silver';
+      style.color = 'blue';
+    }
+
     let preClass = 'h5 right-align p1 m0 '
     preClass += this.props.light ? 'black' : 'white'
 

@@ -8,24 +8,27 @@ class Header extends React.Component {
   render () {
     let navClass1 = '';
     let navClass2 = '';
+    let headerClass = 'flex flex-center flex-wrap mxn2 p2'
+    let buttonClass = 'button rounded button-transparent '
+    let headerClassH1 = 'm0 headline italic'
+
     if (this.props.path == "/") {
       navClass1 = 'btn btn-outline mb1 white';
       navClass2 = 'btn';
-    } else {
-      navClass2 = 'btn btn-outline mb1 white';
-      navClass1 = 'btn';
+      buttonClass += this.props.light ? 'navy' : 'white'
+      headerClass += this.props.light ? ' navy' : ' white'
+      navClass1 += this.props.light ? ' navy' : ' white'
+      navClass2 += this.props.light ? ' navy' : ' white'
+    } else if(this.props.path == '/about') {
+      headerClassH1 += ' blue'
+      navClass2 = 'btn btn-outline mb1 blue';
+      navClass1 = 'btn blue';
     }
-    let headerClass = 'flex flex-center flex-wrap mxn2 p2'
-    let buttonClass = 'button rounded button-transparent '
-    buttonClass += this.props.light ? 'navy' : 'white'
-    headerClass += this.props.light ? ' navy' : ' white'
-    navClass1 += this.props.light ? ' navy' : ' white'
-    navClass2 += this.props.light ? ' navy' : ' white'
 
     return (
       <header className={headerClass}>
         <div className='flex-auto px3'>
-          <h1 className='m0 headline italic'>
+          <h1 className={headerClassH1}>
           <a href="/">{this.props.name}</a>
             
             {/* <span className='h4'> v{this.props.version}</span> */}
