@@ -8,6 +8,12 @@ import { Media } from 'rebass'
 
 var Index = React.createClass({
   render: function () {
+
+    let styleH1 = {
+      'font-size': '35px',
+      'text-align': 'center' 
+    }
+
   	let hoverCard = 'card bg-navy';
   	let ReactElement1 = <img src='http://placehold.it/300x200&text=slide1'/>;
     let ReactElement2 = <img src='http://placehold.it/40x40&text=slide1'/>;
@@ -29,9 +35,9 @@ var Index = React.createClass({
 				sm={6}
 				md={4}>
 					<Card >
-					    <h1 className={lightClass}>
+					    <h2 className="center">
 					    	<a href="/about">About Me</a>
-					    </h1>
+					    </h2>
 					</Card>
 				</Col>
 
@@ -39,19 +45,19 @@ var Index = React.createClass({
 				sm={6}
 				md={4}>
 				<Card className={hoverCard}>
-				    <h1 className={lightClass}>
+				    <h2 className="center">
 				      <a href="https://github.com/alexoviedo999">Github</a>
-				    </h1>
+				    </h2>
 				</Card>
 				</Col>
 
 				<Col
 				sm={6}
 				md={4}>
-					<Card className="card">
-					    <h1 className={lightClass}>
+					<Card className={hoverCard}>
+					    <h2 className="center">
 					    	<a href="http://alejandrooviedo.com">Tumblr</a>
-					    </h1>
+					    </h2>
 					</Card>
 				</Col>
 			</Row>

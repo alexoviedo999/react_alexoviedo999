@@ -6,9 +6,17 @@ import { LinkBtn } from 'rebass'
 
 class Header extends React.Component {
   render () {
+    let style = {
+
+    }
+
+    let styleH1 = {
+      'font-size': '35px'
+    }
+
     let navClass1 = '';
     let navClass2 = '';
-    let headerClass = 'flex flex-center flex-wrap mxn2 p2'
+    let headerClass = 'flex flex-colomn'
     let buttonClass = 'button rounded button-transparent '
     let headerClassH1 = 'm0 headline italic'
 
@@ -26,11 +34,10 @@ class Header extends React.Component {
     }
 
     return (
-      <header className={headerClass}>
-        <div className='flex-auto px3'>
-          <h1 className={headerClassH1}>
-          <a href="/">{this.props.name}</a>
-            
+      <header style={style} className={headerClass}>
+        <div className='px3 mt2'>
+          <h1 style={styleH1} className={headerClassH1}>
+            <a href="/">{this.props.name}</a>
             {/* <span className='h4'> v{this.props.version}</span> */}
           </h1>
           {/* <p className='m0 right bold'>{this.props.description}</p> */}
