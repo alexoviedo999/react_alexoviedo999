@@ -8,9 +8,9 @@ var Index = require('./components/Index.jsx')
 var About = require('./components/About.jsx')
 
 var Routes = (
-  <Route handler={Root} path='http://alexoviedo999.github.io/react_alexoviedo999/'>
+  <Route handler={Root} path='/'>
     <DefaultRoute handler={Index} />
-    <Route path='http://alexoviedo999.github.io/react_alexoviedo999/about' handler={About} />
+    <Route path='/about' handler={About} />
   </Route>
 )
 

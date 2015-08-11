@@ -11,7 +11,7 @@ class Background extends React.Component {
     }
     console.log('background: '+ this.props.path);
 
-    if(this.props.path == 'http://alexoviedo999.github.io/react_alexoviedo999/about') {
+    if(this.props.path == '/about') {
       style.backgroundImage = 'none';
       style.backgroundColor = 'silver';
       style.color = 'blue';

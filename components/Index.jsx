@@ -30,7 +30,7 @@ var Index = React.createClass({
 				md={4}>
 					<Card >
 					    <h1 className={lightClass}>
-					    	<a href="http://alexoviedo999.github.io/react_alexoviedo999/about">About Me</a>
+					    	<a href="/about">About Me</a>
 					    </h1>
 					</Card>
 				</Col>
