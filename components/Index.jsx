@@ -11,12 +11,10 @@ var Index = React.createClass({
 
     let styleH1 = {
       'font-size': '35px',
-      'text-align': 'center' 
+      'text-align': 'center'
     }
 
   	let hoverCard = 'card bg-navy';
-  	let ReactElement1 = <img src='http://placehold.it/300x200&text=slide1'/>;
-    let ReactElement2 = <img src='http://placehold.it/40x40&text=slide1'/>;
     let lightClass = 'p3 center'
     lightClass += this.props.light ? ' navy' : ' white'
     let cardBorder = 'mb4'
@@ -24,19 +22,13 @@ var Index = React.createClass({
 
     return (
     	<div className="p3">
-    		<section className="mb3">
-    			<p className="h3">
-    				<span>Welcome, I&#8217;m a front-end developer with a passion for visual art and great UX.</span><br/>
-    				<span>Feel free to get in touch via email: <a href="mailto:alexoviedo999@gmail.com?subject=Message from alexoviedo999.io" className='white bold'>alexoviedo999@gmail.com</a> or twitter: <a className='white bold' href="https://twitter.com/alexoviedo999">@alexoviedo999</a>.</span>
-    			</p>
-    		</section>
 	        <Row>
 				<Col 
 				sm={6}
 				md={4}>
 					<Card >
 					    <h2 className="center">
-					    	<a href="/about">About Me</a>
+					    	<a href="/visual">Visual Experiments</a>
 					    </h2>
 					</Card>
 				</Col>

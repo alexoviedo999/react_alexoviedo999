@@ -7,9 +7,9 @@ import Color from 'color'
 import qs from 'qs'
 import Background from './Background.jsx'
 import Header from './Header.jsx'
+import Footer from './Footer.jsx'
 import BaseColor from './BaseColor.jsx'
 import TweetButton from './TweetButton.jsx'
-import { Footer } from 'blk'
 
 class Gradient extends React.Component {
 
@@ -102,14 +102,12 @@ class Gradient extends React.Component {
     return (
       <div>
         <Background {...this.props} gradient={gradient} light={light}>
-        <div className='px1 right'>
-        </div>
+
           <Header {...this.props} light={light}/>
           <RouteHandler {...this.props} light={light} />
-          <div className='px2'>
             {/*<Footer {...this.props} />*/}
             {/*<TweetButton {...this.props} />*/}
-          </div>
+          <Footer {...this.props} light={light}/>
         </Background>
         <div className='md-flex hide hideControls'>
           <div className='md-col-6 lg-col-5 px2'>

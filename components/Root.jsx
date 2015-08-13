@@ -22,8 +22,8 @@ class Root extends React.Component {
           <meta name='viewport' content='width=device-width,initial-scale=1' />
           <style dangerouslySetInnerHTML={{ __html: css }} />
         </head>
-        <body>
-          <Gradient {...this.props}/>
+        <body className="flex flex-colomn flex-stretch">
+          <Gradient className="flex-stretch" {...this.props}/>
           <script
             id='initial-props'
             type='application/json'
