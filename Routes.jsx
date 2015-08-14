@@ -7,6 +7,7 @@ var Root = require('./components/Root.jsx')
 var Index = require('./components/Index.jsx')
 var About = require('./components/About.jsx')
 var Visual = require('./components/Visual.jsx')
+import { Footer } from 'rebass'
 
 var Routes = (
   <Route handler={Root} path='/'>

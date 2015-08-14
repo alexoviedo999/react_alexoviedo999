@@ -4,6 +4,7 @@ import Header from './Header.jsx'
 import Color from 'color'
 
 
+
 var About = React.createClass({
   render: function () {
 

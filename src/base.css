@@ -5,6 +5,7 @@
 @import 'basscss-input-range';
 @import 'basscss-color-forms';
 @import 'basscss-color-input-range';
+@import 'rebass';
 
 .p0 { padding: 0 }
 .no-border { border: 0 }
@@ -50,7 +51,7 @@
 @media (--breakpoint-sm) {
 
 	h1 {
-		font-size: 70px !important;
+		
 	}
 }
 

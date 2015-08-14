@@ -7,7 +7,7 @@ import Color from 'color'
 import qs from 'qs'
 import Background from './Background.jsx'
 import Header from './Header.jsx'
-import Footer from './Footer.jsx'
+import Footer2 from './Footer.jsx'
 import BaseColor from './BaseColor.jsx'
 import TweetButton from './TweetButton.jsx'
 
@@ -107,7 +107,7 @@ class Gradient extends React.Component {
           <RouteHandler {...this.props} light={light} />
             {/*<Footer {...this.props} />*/}
             {/*<TweetButton {...this.props} />*/}
-          <Footer {...this.props} light={light}/>
+          <Footer2 {...this.props} light={light}/>
         </Background>
         <div className='md-flex hide hideControls'>
           <div className='md-col-6 lg-col-5 px2'>
