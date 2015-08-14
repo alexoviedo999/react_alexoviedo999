@@ -10,6 +10,10 @@ import { Footer } from 'rebass'
 var Index = React.createClass({
   render: function () {
 
+  	let indexStyle = {
+      'flex': '0'
+    }
+
     let styleH1 = {
       'font-size': '35px',
       'text-align': 'center'
@@ -22,7 +26,7 @@ var Index = React.createClass({
     cardBorder += this.props.light ? ' nightBorder' : ' dayBorder'
 
     return (
-    	<div className="p3">
+    	<div style={indexStyle} className="p3">
     		<section className="mb3">
               <p className="h3">
                 <span>Welcome, I&#8217;m a front-end developer with a passion for visual art and great UX.</span><br/>
