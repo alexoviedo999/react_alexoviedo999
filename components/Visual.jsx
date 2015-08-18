@@ -20,60 +20,65 @@ var Visual = React.createClass({
       border: 'red 1px solid'
     }
 
+
+    let flexContainer = {
+      display: 'flex',
+      WebkitAlignItems: 'center',
+      alignItems: 'center',
+      WebkitJustifyContent: 'center',
+      justifyContent: 'center',
+      WebkitFlexDirection: 'row',
+      flexDirection: 'row',
+      WebkitFlexWrap: 'wrap',
+      flexWrap: 'wrap',
+      WebkitFlexFlow: 'row wrap',
+      flexFlow: 'row wrap',
+      WebkitAlignContent: 'flex-end',
+      alignContent: 'flex-end',
+      color: '#FF4136'
+    }
+
+    let divContainer = {
+      height: '10vh',
+      width: '30vh',
+      border: '2px solid #FF4136',
+      borderRadius: '3px',
+      fontWeight: '600',
+    }
+
+    let anchorStyle = {
+      display: 'inline-block',
+      height: '100%',
+      width: '100%',
+      textDecoration: 'none',
+      color: '#FF4136'
+    }
+
+
     let hoverCard = 'card';
     let lightClass = 'p3 center'
     lightClass += this.props.light ? ' navy' : ' white'
 
     return (
-      <div className="p3 red">
-        <section className="mb3">
-          <h2 className="center">
-            Visual Experiments
-          </h2>
-        </section>
-          <Row>
-        <Col 
-        sm={6}
-        md={4}
-        style={cardStyle}
-        className="visualCard">
-          <Card>
-              <h2 className="center">
-                <a href="http://alexoviedo999.github.io/cardboard-1/4/">Mirror Sky</a>
-              </h2>
-          </Card>
-        </Col>
 
-        <Col
-        sm={6}
-        md={4}>
-        <Card className={hoverCard}>
-            <h2 className="center">
-                <a href="http://alexoviedo999.github.io/cardboard-1/5/">Space Mecca</a>
-              </h2>
-        </Card>
-        </Col>
+      <div style={flexContainer} className="center">
+        <div style={divContainer} className="m2">
+          <a style={anchorStyle} href="http://alexoviedo999.github.io/cardboard-1/4/">
+            <div className="h2 mt3">Mirror Sky</div>
+          </a>
+        </div>
+        <div style={divContainer} className="m2">
+          <a style={anchorStyle} href="http://alexoviedo999.github.io/cardboard-1/5/">
+            <div className="h2 mt3">Space Mecca</div>
+          </a>
+        </div>
+        <div style={divContainer} className="m2">
+          <a style={anchorStyle} href="http://p5-interactive.herokuapp.com/practice">
+            <div className="h2 mt3">Discus Tunes</div>
+          </a>
+        </div>
+      </div>
 
-        <Col
-        sm={6}
-        md={4}>
-          <Card className={hoverCard}>
-              <h2 className="center">
-                <a href="http://p5-interactive.herokuapp.com/practice">Discus Tunes</a>
-              </h2>
-          </Card>
-        </Col>
-        <Col
-        sm={6}
-        md={4}>
-          <Card className={hoverCard}>
-              <h2 className="center">
-                <a href="http://p5-interactive.herokuapp.com/play/worm2">Discus Tunes</a>
-              </h2>
-          </Card>
-        </Col>
-      </Row>
-    </div>
     )
 
   }

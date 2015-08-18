@@ -6,9 +6,7 @@ import { LinkBtn } from 'rebass'
 
 class Header extends React.Component {
   render () {
-    let style = {
 
-    }
 
     let styleH1 = {
       'font-size': '8vw',
@@ -36,14 +34,16 @@ class Header extends React.Component {
       navClass2 = 'btn btn-outline mb1 blue';
       navClass1 = 'btn blue';
     } else if(this.props.path == '/visual') {
-      headerClassH1 += ' red'
-      navClass2 = 'btn btn-outline mb1 red';
-      navClass1 = 'btn red';
+      var style = {
+        color: '#FF4136'
+      }
+      navClass2 = 'btn btn-outline mb1';
+      navClass1 = 'btn';
     }
 
     return (
       <header style={style} className={headerClass}>
-        <div className='px3 mt2'>
+        <div className='mt2'>
           <h1 style={styleH1} className={headerClassH1}>
             <a style={styleAtag} href="/">{this.props.name}</a>
             {/* <span className='h4'> v{this.props.version}</span> */}

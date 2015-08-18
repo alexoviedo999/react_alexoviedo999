@@ -10,17 +10,14 @@ class Footer2 extends React.Component {
 
     var footerH5Class = '';
 
-    var style = {
-      'flex': '0.1'
-    }
+    
 
     let footerTextStyle = {
-      'display': 'flex',
-      'flex': '1',
+      
       'justify-content': 'flex-end'
     }
 
-    let footerClass = 'col-10 mx-auto'
+    let footerClass = 'flex col-10 mx-auto'
 
     if (this.props.path == "/") {
       var footerH5Class = 'center white';
@@ -29,7 +26,10 @@ class Footer2 extends React.Component {
       var footerH5Class = 'center blue';
       
     } else if(this.props.path == '/visual') {
-      var footerH5Class = 'center red';
+      var style = {
+        color: '#FF4136'
+      }
+      var footerH5Class = 'center';
     }
 
     return (

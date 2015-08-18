@@ -47,6 +47,10 @@
     flex-direction: column;
 }
 
+.cardWrapper {
+	border: 1px solid var(--red);
+}
+
 
 @media (--breakpoint-sm) {
 

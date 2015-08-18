@@ -12,7 +12,7 @@ class Background extends React.Component {
    
 
     if(this.props.path == '/') {
-      var backgroundStyle = 'flex flex-column p1'
+      var backgroundStyle = 'flex flex-column p3'
 
       style = {
         backgroundImage: this.props.gradient,
