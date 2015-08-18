@@ -38,8 +38,6 @@ var Visual = React.createClass({
     }
 
     let divContainer = {
-      height: '5vh',
-      width: '30vh',
       border: '1px solid #FF4136',
       borderRadius: '3px',
       fontWeight: '600',
@@ -60,16 +58,15 @@ var Visual = React.createClass({
     return (
 
       <div className="">
-
             <div style={flexContainer} className="center">
             <a style={anchorStyle} href="http://alexoviedo999.github.io/cardboard-1/4/">
-              <div style={divContainer}  className="h2 p2 m2">Mirror Sky</div>
+              <div style={divContainer}  className="p2 m2 cardText">Mirror Sky</div>
             </a>
             <a style={anchorStyle} href="http://alexoviedo999.github.io/cardboard-1/5/">
-              <div style={divContainer} className="h2 mt2 p2 m2">Space Mecca</div>
+              <div style={divContainer} className="p2 m2 cardText">Space Mecca</div>
             </a>
             <a style={anchorStyle} href="http://p5-interactive.herokuapp.com/practice">
-              <div style={divContainer} className="h2 mt2 p2 m2">Discus Tunes</div>
+              <div style={divContainer} className="p2 m2 cardText">Discus Tunes</div>
             </a>
       </div>
     </div>

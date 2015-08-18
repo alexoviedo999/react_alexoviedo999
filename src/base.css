@@ -41,21 +41,41 @@
 }
 
 .flex > div {
-    flex: 1;
+    /*flex: 1;
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column;*/
 }
 
 .cardWrapper {
 	border: 1px solid var(--red);
 }
 
+.cardText {
+	font-size: 14px;
+	min-width: 50vw;
+}
 
 @media (--breakpoint-sm) {
+	.cardText {
+		font-size: 14px;
+		min-width: 40vw;
+	}
+}
 
-	h1 {
-		
+@media (--breakpoint-md) {
+
+	.cardText {
+		font-size: 16px;
+		min-width: 25vw;
+	}
+}
+
+@media (--breakpoint-lg) {
+
+	.cardText {
+		font-size: 18px;
+		min-width: 20vw;
 	}
 }
 
