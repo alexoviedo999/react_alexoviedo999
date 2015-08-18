@@ -21,7 +21,7 @@ var Visual = React.createClass({
     }
 
 
-    let flexContainer = {
+  let flexContainer = {
       display: 'flex',
       WebkitAlignItems: 'center',
       alignItems: 'center',
@@ -34,24 +34,22 @@ var Visual = React.createClass({
       WebkitFlexFlow: 'row wrap',
       flexFlow: 'row wrap',
       WebkitAlignContent: 'flex-end',
-      alignContent: 'flex-end',
-      color: '#FF4136'
+      alignContent: 'flex-end'
     }
 
     let divContainer = {
-      height: '10vh',
+      height: '5vh',
       width: '30vh',
-      border: '2px solid #FF4136',
+      border: '1px solid #FF4136',
       borderRadius: '3px',
       fontWeight: '600',
+      color: '#FF4136'
     }
 
     let anchorStyle = {
       display: 'inline-block',
       height: '100%',
-      width: '100%',
-      textDecoration: 'none',
-      color: '#FF4136'
+      textDecoration: 'none'
     }
 
 
@@ -61,23 +59,20 @@ var Visual = React.createClass({
 
     return (
 
-      <div style={flexContainer} className="center">
-        <div style={divContainer} className="m2">
-          <a style={anchorStyle} href="http://alexoviedo999.github.io/cardboard-1/4/">
-            <div className="h2 mt3">Mirror Sky</div>
-          </a>
-        </div>
-        <div style={divContainer} className="m2">
-          <a style={anchorStyle} href="http://alexoviedo999.github.io/cardboard-1/5/">
-            <div className="h2 mt3">Space Mecca</div>
-          </a>
-        </div>
-        <div style={divContainer} className="m2">
-          <a style={anchorStyle} href="http://p5-interactive.herokuapp.com/practice">
-            <div className="h2 mt3">Discus Tunes</div>
-          </a>
-        </div>
+      <div className="">
+
+            <div style={flexContainer} className="center">
+            <a style={anchorStyle} href="http://alexoviedo999.github.io/cardboard-1/4/">
+              <div style={divContainer}  className="h2 p2 m2">Mirror Sky</div>
+            </a>
+            <a style={anchorStyle} href="http://alexoviedo999.github.io/cardboard-1/5/">
+              <div style={divContainer} className="h2 mt2 p2 m2">Space Mecca</div>
+            </a>
+            <a style={anchorStyle} href="http://p5-interactive.herokuapp.com/practice">
+              <div style={divContainer} className="h2 mt2 p2 m2">Discus Tunes</div>
+            </a>
       </div>
+    </div>
 
     )
 

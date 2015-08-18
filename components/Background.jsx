@@ -23,7 +23,7 @@ class Background extends React.Component {
     }    
 
     if(this.props.path == '/about') {
-      var backgroundStyle = 'flex flex-column bg-silver'
+      var backgroundStyle = 'flex flex-column bg-silver p3'
 
       style = {
         minHeight: '100vh'
@@ -32,7 +32,7 @@ class Background extends React.Component {
     }
 
     if(this.props.path == '/visual') {
-      var backgroundStyle = 'flex flex-column bg-navy'
+      var backgroundStyle = 'flex flex-column bg-navy p3' 
 
       style = {
         minHeight: '100vh'
