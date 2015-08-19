@@ -50,6 +50,11 @@ var Visual = React.createClass({
       textDecoration: 'none'
     }
 
+    let sectionStyle = {
+      textAlign: 'left',
+      color: '#FF4136'
+    }
+
 
     let hoverCard = 'card';
     let lightClass = 'p3 center'
@@ -57,17 +62,22 @@ var Visual = React.createClass({
 
     return (
 
-      <div className="">
-            <div style={flexContainer} className="center">
-            <a style={anchorStyle} href="http://alexoviedo999.github.io/cardboard-1/4/">
-              <div style={divContainer}  className="p2 m2 cardText">Mirror Sky</div>
-            </a>
-            <a style={anchorStyle} href="http://alexoviedo999.github.io/cardboard-1/5/">
-              <div style={divContainer} className="p2 m2 cardText">Space Mecca</div>
-            </a>
-            <a style={anchorStyle} href="http://p5-interactive.herokuapp.com/practice">
-              <div style={divContainer} className="p2 m2 cardText">Discus Tunes</div>
-            </a>
+      <div className="visualCards">
+        <section style={sectionStyle} className="flex col-12 lg-col-8 sm-col-8 md-col-8 m1">
+          <div className="h3 left">
+            <p>This page highlights some of the  2D, 3D, and VR projects I&#8217;ve worked on.</p>
+          </div>
+        </section>
+        <div style={flexContainer} className="center">
+        <a style={anchorStyle} href="http://alexoviedo999.github.io/cardboard-1/4/">
+          <div style={divContainer}  className="p2 m2 cardText">Mirror Sky</div>
+        </a>
+        <a style={anchorStyle} href="http://alexoviedo999.github.io/cardboard-1/5/">
+          <div style={divContainer} className="p2 m2 cardText">Space Mecca</div>
+        </a>
+        <a style={anchorStyle} href="http://p5-interactive.herokuapp.com/practice">
+          <div style={divContainer} className="p2 m2 cardText">Discus Tunes</div>
+        </a>
       </div>
     </div>
 

@@ -55,8 +55,8 @@ var Index = React.createClass({
     cardBorder += this.props.light ? ' nightBorder' : ' dayBorder'
 
     return (
-    	<div className="">
-    		<section stlye={sectionStyle} className="flex col-12 lg-col-8 sm-col-8 md-col-8">
+    	<div className="indexCards">
+    		<section style={sectionStyle} className="flex col-12 lg-col-8 sm-col-8 md-col-8 m1">
               <div className="h3 left">
                 <p>Welcome, I&#8217;m a front-end developer with a passion for visual art and great UX.</p>
                 <p>Feel free to get in touch via email: <a href="mailto:alexoviedo999@gmail.com?subject=Message from alexoviedo999.io" className='white bold'>alexoviedo999@gmail.com</a> or twitter: <a className='white bold' href="https://twitter.com/alexoviedo999">@alexoviedo999</a>.</p>

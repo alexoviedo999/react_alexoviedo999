@@ -21,15 +21,18 @@ class Footer2 extends React.Component {
 
     if (this.props.path == "/") {
       var footerH5Class = 'center white';
+      footerClass += ' indexFooter';
       
     } else if(this.props.path == '/about') {
       var footerH5Class = 'center blue';
+      footerClass += ' aboutFooter'
       
     } else if(this.props.path == '/visual') {
       var style = {
         color: '#FF4136'
       }
       var footerH5Class = 'center';
+      footerClass += ' visualFooter';
     }
 
     return (

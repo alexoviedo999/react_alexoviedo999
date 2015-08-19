@@ -37,7 +37,7 @@ class Header extends React.Component {
       var style = {
         color: '#FF4136'
       }
-      navClass2 = 'btn btn-outline mb1';
+      navClass2 = 'btn mb1';
       navClass1 = 'btn';
     }
 
