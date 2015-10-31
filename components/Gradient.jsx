@@ -161,4 +161,3 @@ class Gradient extends React.Component {
 
 
 export default Gradient
-

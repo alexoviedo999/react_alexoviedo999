@@ -8,25 +8,37 @@ import { Footer } from 'rebass'
 class Footer2 extends React.Component {
   render () {
 
-    var footerH5Class = '';
-
-    
-
     let footerTextStyle = {
-      
       'justify-content': 'flex-end'
+    }
+
+    let indexFooterH5Class = {
+      display: 'inline-block',
+      color: this.props.light ? 'black' : 'white',
+      fontWeight: 400
     }
 
     let footerClass = 'flex col-10 mx-auto'
 
     if (this.props.path == "/") {
-      var footerH5Class = 'center white';
+      var footerH5Class = indexFooterH5Class;
       footerClass += ' indexFooter';
-      
+      var footerStyle = {
+          borderTopColor: this.props.light ? 'black' : 'white'
+      }
+
+      var anchorStyle = {
+        display: 'inline-block',
+        height: '100%',
+        textDecoration: 'none',
+        color: this.props.light ? 'black' : 'white',
+        fontWeight: 600
+      }
+
     } else if(this.props.path == '/about') {
       var footerH5Class = 'center blue';
       footerClass += ' aboutFooter'
-      
+
     } else if(this.props.path == '/visual') {
       var style = {
         color: '#FF4136'
@@ -37,8 +49,8 @@ class Footer2 extends React.Component {
 
     return (
       <div style={style} className={footerClass}>
-        <Footer>
-            <h5 className={footerH5Class}>Get in touch: <a href="mailto:alexoviedo999@gmail.com?subject=Message from alexoviedo999.io">alexoviedo999@gmail.com</a></h5>
+        <Footer style={footerStyle}>
+            <h5 className={footerH5Class}>Get in touch: <a style={anchorStyle} href="mailto:alexoviedo999@gmail.com?subject=Message from alexoviedo999.io">alexoviedo999@gmail.com</a></h5>
         </Footer>
       </div>
     )
@@ -50,4 +62,3 @@ Footer.defaultProps = {
 }
 
 export default Footer2
-

@@ -8,9 +8,11 @@ class BaseColor extends React.Component {
     super ()
     this.state = {
       base: '#0074D9',
-      hue: 120,
+      hue: 205,
       saturation: 100,
-      lightness: 60
+      lightness: 60,
+      secondsElapsed: 205,
+      countUp: true
     }
 
     {/*this.state = {
@@ -27,6 +29,8 @@ class BaseColor extends React.Component {
     this.updateHSL = this.updateHSL.bind(this)
     this.updateBase = this.updateBase.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
+    this.tick = this.tick.bind(this)
+    this.setSecondsElapsed = this.setSecondsElapsed.bind(this)
     //this.componentDidMount = this.componentDidMount.bind(this)
   }
 
@@ -36,8 +40,8 @@ class BaseColor extends React.Component {
     this.props.changeBase(this.state.base)
   }
 
-  changeHue (e) {
-    this.setState({ hue: e.target.value })
+  changeHue (seconds) {
+    this.setState({ hue: seconds })
     this.updateBase()
   }
 
@@ -87,14 +91,40 @@ class BaseColor extends React.Component {
   }
 
   componentDidMount () {
-    this.updateHSL()
+    this.updateHSL(),
+    this.interval = setInterval(this.tick, 100);
+  }
+
+  componentWillUnmount (){
+    clearInterval(this.interval);
+  }
+
+  setSecondsElapsed () {
+    if (this.state.countUp) {
+      this.state.secondsElapsed ++;
+        if (this.state.secondsElapsed >= 255) {
+          this.state.countUp = false;
+        }
+    } else {
+      this.state.secondsElapsed --;
+        if (this.state.secondsElapsed <= 0) {
+          this.state.countUp = true
+        }
+    }
+  }
+
+  tick () {
+    this.setState({secondsElapsed: this.state.secondsElapsed});
+    this.setSecondsElapsed ();
+    this.changeHue (this.state.secondsElapsed);
   }
 
   render () {
-    let base = this.state.base
-    let hue = this.state.hue
-    let saturation = this.state.saturation
-    let lightness = this.state.lightness
+    let base = this.state.base;
+    let hue = this.state.hue;
+    let saturation = this.state.saturation;
+    let lightness = this.state.lightness;
+    console.log(this.state.secondsElapsed);
 
     return (
       <form onSubmit={this.handleSubmit}>
@@ -109,11 +139,8 @@ class BaseColor extends React.Component {
           </div>
           <div className='sm-flex mxn2 no-select'>
             <div className='flex-auto px2'>
-              <label className='h5 bold block'>Hue {hue}&deg;</label>
-              <input type='range' value={hue}
-                min='0' max='360'
-                onBlur={this.changeHue}
-                onChange={this.changeHue}
+              <label className='h5 bold block'>Hue {this.state.secondsElapsed}&deg;</label>
+              <input type='range' value={this.state.secondsElapsed}
                 className='col-12 dark-gray range-light' />
             </div>
             <div className='flex-auto px2'>
@@ -141,4 +168,3 @@ class BaseColor extends React.Component {
 }
 
 export default BaseColor
-

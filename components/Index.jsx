@@ -16,32 +16,35 @@ var Index = React.createClass({
   	}
 
   	let flexContainer = {
-		display: 'flex',
-		WebkitAlignItems: 'center',
-		alignItems: 'center',
-		WebkitJustifyContent: 'center',
-		justifyContent: 'center',
-		WebkitFlexDirection: 'row',
-		flexDirection: 'row',
-		WebkitFlexWrap: 'wrap',
-		flexWrap: 'wrap',
-		WebkitFlexFlow: 'row wrap',
-		flexFlow: 'row wrap',
-		WebkitAlignContent: 'flex-end',
-		alignContent: 'flex-end'
-      
+  		display: 'flex',
+  		WebkitAlignItems: 'center',
+  		alignItems: 'center',
+  		WebkitJustifyContent: 'center',
+  		justifyContent: 'center',
+  		WebkitFlexDirection: 'row',
+  		flexDirection: 'row',
+  		WebkitFlexWrap: 'wrap',
+  		flexWrap: 'wrap',
+  		WebkitFlexFlow: 'row wrap',
+  		flexFlow: 'row wrap',
+  		WebkitAlignContent: 'flex-end',
+  		alignContent: 'flex-end'
     }
 
     let divContainer = {
-	    border: '1px solid #FFF',
+	    border: '1px solid',
 	    borderRadius: '3px',
 	    fontWeight: '600',
+      color: this.props.light ? 'black' : 'white',
+      borderColor: this.props.light ? 'black' : 'white'
     }
 
     let anchorStyle = {
     	display: 'inline-block',
     	height: '100%',
-    	textDecoration: 'none'
+    	textDecoration: 'none',
+      color: this.props.light ? 'black' : 'white',
+      fontWeight: 600
     }
 
     let sectionStyle = {
@@ -59,7 +62,7 @@ var Index = React.createClass({
     		<section style={sectionStyle} className="flex col-12 lg-col-8 sm-col-8 md-col-8 m1">
               <div className="h3 left">
                 <p>Welcome, I&#8217;m a front-end developer with a passion for visual art and great UX.</p>
-                <p>Feel free to get in touch via email: <a href="mailto:alexoviedo999@gmail.com?subject=Message from alexoviedo999.io" className='white bold'>alexoviedo999@gmail.com</a> or twitter: <a className='white bold' href="https://twitter.com/alexoviedo999">@alexoviedo999</a>.</p>
+                <p>Feel free to get in touch via email: <a style={anchorStyle} href="mailto:alexoviedo999@gmail.com?subject=Message from alexoviedo999.com">alexoviedo999@gmail.com</a> or twitter: <a style={anchorStyle} href="https://twitter.com/alexoviedo999">@alexoviedo999</a>.</p>
               </div>
             </section>
             <div style={flexContainer} className="center">
@@ -79,5 +82,3 @@ var Index = React.createClass({
 });
 
 module.exports = Index
-
-
