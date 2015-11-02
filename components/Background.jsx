@@ -7,9 +7,7 @@ class Background extends React.Component {
   render () {
 
     var style = {}
-    
-    console.log('background: '+ this.props.path);
-   
+
 
     if(this.props.path == '/') {
       var backgroundStyle = 'flex flex-column p3'
@@ -20,7 +18,7 @@ class Background extends React.Component {
         color: this.props.light ? 'black' : 'white'
       }
 
-    }    
+    }
 
     if(this.props.path == '/about') {
       var backgroundStyle = 'flex flex-column bg-silver p3'
@@ -32,12 +30,12 @@ class Background extends React.Component {
     }
 
     if(this.props.path == '/visual') {
-      var backgroundStyle = 'flex flex-column bg-navy p3' 
+      var backgroundStyle = 'flex flex-column bg-navy p3'
 
       style = {
         minHeight: '100vh'
       }
-      
+
     }
 
     let preClass = 'h5 right-align p1 m0 '
@@ -56,4 +54,3 @@ class Background extends React.Component {
 }
 
 export default Background
-

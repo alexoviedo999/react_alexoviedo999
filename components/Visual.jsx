@@ -12,16 +12,15 @@ var Visual = React.createClass({
   render: function () {
 
     let styleH1 = {
-      'font-size': '35px',
-      'text-align': 'center' 
+      'fontSize': '35px',
+      'text-align': 'center'
     }
 
     let cardStyle = {
       border: 'red 1px solid'
     }
 
-
-  let flexContainer = {
+    let flexContainer = {
       display: 'flex',
       WebkitAlignItems: 'center',
       alignItems: 'center',
@@ -55,13 +54,11 @@ var Visual = React.createClass({
       color: '#FF4136'
     }
 
-
     let hoverCard = 'card';
     let lightClass = 'p3 center'
     lightClass += this.props.light ? ' navy' : ' white'
 
     return (
-
       <div className="visualCards">
         <section style={sectionStyle} className="flex col-12 lg-col-8 sm-col-8 md-col-8 m1">
           <div className="h3 left">
@@ -80,9 +77,7 @@ var Visual = React.createClass({
         </a>
       </div>
     </div>
-
     )
-
   }
 })
 

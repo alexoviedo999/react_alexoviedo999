@@ -43,4 +43,3 @@ function safeStringify(obj) {
 }
 
 export default Root
-

@@ -12,19 +12,23 @@ class Footer2 extends React.Component {
       'justify-content': 'flex-end'
     }
 
-    let indexFooterH5Class = {
-      display: 'inline-block',
-      color: this.props.light ? 'black' : 'white',
-      fontWeight: 400
-    }
-
     let footerClass = 'flex col-10 mx-auto'
 
+    var indexFooterH5Class = {
+      display: 'inline-block',
+      fontWeight: 400,
+    }
+
     if (this.props.path == "/") {
-      var footerH5Class = indexFooterH5Class;
       footerClass += ' indexFooter';
       var footerStyle = {
-          borderTopColor: this.props.light ? 'black' : 'white'
+          borderTopColor: this.props.light ? 'black' : 'white',
+          transition: 'borderTopColor 0.5s ease'
+      }
+
+      var footerH5 = {
+        color: this.props.light ? 'black' : 'white',
+        transition: 'color 0.5s ease'
       }
 
       var anchorStyle = {
@@ -32,10 +36,32 @@ class Footer2 extends React.Component {
         height: '100%',
         textDecoration: 'none',
         color: this.props.light ? 'black' : 'white',
-        fontWeight: 600
+        fontWeight: 600,
+        transition: 'color 0.5s ease'
       }
 
     } else if(this.props.path == '/about') {
+
+      var footerStyle = {
+          borderTopColor: '#007bbd',
+      }
+
+      var footerH5 = {
+        display: 'inline-block',
+        color: '#007bbd',
+        fontWeight: 400,
+        transition: 'color 0.5s ease'
+      }
+
+      var anchorStyle = {
+        display: 'inline-block',
+        height: '100%',
+        textDecoration: 'none',
+        color: '#007bbd',
+        fontWeight: 600,
+        transition: 'color 0.5s ease'
+      }
+
       var footerH5Class = 'center blue';
       footerClass += ' aboutFooter'
 
@@ -50,7 +76,7 @@ class Footer2 extends React.Component {
     return (
       <div style={style} className={footerClass}>
         <Footer style={footerStyle}>
-            <h5 className={footerH5Class}>Get in touch: <a style={anchorStyle} href="mailto:alexoviedo999@gmail.com?subject=Message from alexoviedo999.io">alexoviedo999@gmail.com</a></h5>
+            <h5 style={footerH5}>Get in touch: <a style={anchorStyle} href="mailto:alexoviedo999@gmail.com?subject=Message from alexoviedo999.io">alexoviedo999@gmail.com</a></h5>
         </Footer>
       </div>
     )
