@@ -40,7 +40,13 @@ var Visual = React.createClass({
       border: '1px solid #FF4136',
       borderRadius: '3px',
       fontWeight: '600',
-      color: '#FF4136'
+      color: '#FF4136',
+      width: '25%',
+      height: '50px',
+      margin: '10px',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center'
     }
 
     let anchorStyle = {
@@ -67,13 +73,13 @@ var Visual = React.createClass({
         </section>
         <div style={flexContainer} className="center">
         <a style={anchorStyle} href="http://alexoviedo999.github.io/cardboard-1/4/">
-          <div style={divContainer}  className="p2 m2 cardText">Mirror Sky</div>
+          <div style={divContainer}  className="p2 m2 cardText btn btn-outline">Mirror Sky</div>
         </a>
         <a style={anchorStyle} href="http://alexoviedo999.github.io/cardboard-1/5/">
-          <div style={divContainer} className="p2 m2 cardText">Space Mecca</div>
+          <div style={divContainer} className="p2 m2 cardText btn btn-outline">Space Mecca</div>
         </a>
         <a style={anchorStyle} href="http://p5-interactive.herokuapp.com/practice">
-          <div style={divContainer} className="p2 m2 cardText">Discus Tunes</div>
+          <div style={divContainer} className="p2 m2 cardText btn btn-outline">Discus Tunes</div>
         </a>
       </div>
     </div>

@@ -45,12 +45,18 @@ var Index = React.createClass({
 
       var divContainer = {
         border: '1px solid',
-        borderRadius: '3px',
+        // borderRadius: '3px',
         fontWeight: '600',
         color: this.props.light ? 'rgba(0, 0, 0, 0.7)': 'rgba(255, 255, 255, 0.8)',
         borderColor: this.props.light ? 'rgba(0, 0, 0, 0.3)': 'rgba(255, 255, 255, 0.3)',
         backgroundColor: this.props.light ? 'rgba(0, 0, 0, 0.2)': 'rgba(255, 255, 255, 0.2)',
-        transition: 'color 0.5s ease, backgroundColor 0.5s ease'
+        transition: 'color 0.5s ease, backgroundColor 0.5s ease',
+        width: '25%',
+        height: '50px',
+        margin: '10px',
+        display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center'
       }
 
       var anchorStyle = {
@@ -78,23 +84,23 @@ var Index = React.createClass({
     return (
     	<div className="indexCards">
     		<section style={sectionStyle} className="flex col-12 lg-col-8 sm-col-8 md-col-8 m1">
-              <div className="h3 left">
-                <p style={pIndexStyle}>Welcome, I&#8217;m a front-end developer with a passion for visual art and great User Experience.</p>
-                <p style={pIndexStyle}>Feel free to get in touch via email: <a style={anchorStyle} href="mailto:alexoviedo999@gmail.com?subject=Message from alexoviedo999.com">alexoviedo999@gmail.com</a> or twitter: <a style={anchorStyle} href="https://twitter.com/alexoviedo999">@alexoviedo999</a>.</p>
-              </div>
-            </section>
-            <div style={flexContainer} className="center">
-        		<a style={anchorStyle} href="/visual">
-        			<div style={divContainer}  className="white p2 m2 cardText">Visual Play</div>
-        		</a>
-        		<a style={anchorStyle} href="https://github.com/alexoviedo999">
-        			<div style={divContainer} className="white mt2 p2 m2 cardText">Github</div>
-        		</a>
-        		<a style={anchorStyle} href="https://alejandrooviedo.com">
-        			<div style={divContainer} className="white mt2 p2 m2 cardText">Tumblr</div>
-        		</a>
-			</div>
-		</div>
+          <div className="h3 left">
+            <p style={pIndexStyle}>Welcome, I&#8217;m a front-end developer with a passion for visual art and great User Experience.</p>
+            <p style={pIndexStyle}>Feel free to get in touch via email: <a style={anchorStyle} href="mailto:alexoviedo999@gmail.com?subject=Message from alexoviedo999.com">alexoviedo999@gmail.com</a> or twitter: <a style={anchorStyle} href="https://twitter.com/alexoviedo999">@alexoviedo999</a>.</p>
+          </div>
+        </section>
+        <div style={flexContainer} className="center">
+      		<a style={anchorStyle} href="/visual">
+      			<div style={divContainer}  className="m2 cardText btn btn-outline">Visual Play</div>
+      		</a>
+      		<a style={anchorStyle} href="https://github.com/alexoviedo999">
+      			<div style={divContainer} className="mt2 m2 cardText btn btn-outline">Github</div>
+      		</a>
+      		<a style={anchorStyle} href="https://alejandrooviedo.com">
+      			<div style={divContainer} className="mt2 m2 cardText btn btn-outline">Tumblr</div>
+    		  </a>
+			  </div>
+		  </div>
     )
   }
 });
