@@ -41,6 +41,12 @@ class Header extends React.Component {
       fontStyle: 'italic'
     }
 
+    let styleVisualAtag = {
+      textDecoration: 'none',
+      color: '#FF4136',
+      fontStyle: 'italic'
+    }
+
     let navClass1 = '';
     let navClass2 = '';
     let headerClass = 'flex flex-colomn'
@@ -50,19 +56,21 @@ class Header extends React.Component {
     if (this.props.path == "/") {
       styleH1 = styleHomeH1;
       styleAtag = styleHomeAtag;
-      navClass1 = 'btn btn-outline mb1 white';
+      navClass1 = 'btn btn-outline mb1';
       navClass2 = 'btn';
       buttonClass += this.props.light ? 'black' : 'white';
-      navClass1 += this.props.light ? 'black' : 'white';
-      navClass2 += this.props.light ? 'black' : 'white';
+      // navClass1 += this.props.light ? 'black' : 'white';
+      // navClass2 += this.props.light ? 'black' : 'white';
 
       var nav1 = {
         marginRight: '10px',
-        backgroundColor: this.props.light ? 'rgba(0, 0, 0, 0.2)': 'rgba(255, 255, 255, 0.2)',
+        backgroundColor: this.props.light ? 'rgba(0, 0, 0, 0.1)' : 'rgba(255, 255, 255, 0.1)',
+        color: this.props.light ? 'rgba(0, 0, 0, 0.8)' : 'rgba(255, 255, 255, 0.8)',
         transition: 'color 0.5s ease, backgroundColor 0.5s ease'
       }
       var nav2 = {
-        textDecoration: 'none'
+        textDecoration: 'none',
+        color: this.props.light ? 'rgba(0, 0, 0, 0.7)': 'rgba(255, 255, 255, 0.8)',
       }
     } else if(this.props.path == '/about') {
       styleH1 = styleAboutH1;
@@ -77,8 +85,9 @@ class Header extends React.Component {
       }
     } else if(this.props.path == '/visual') {
       var style = {
-        color: '#FF4136'
+        color: '#FF4136',
       }
+      styleAtag = styleVisualAtag;
       styleH1 = styleVisualH1;
       navClass2 = 'btn mb1';
       navClass1 = 'btn';

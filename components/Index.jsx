@@ -44,19 +44,19 @@ var Index = React.createClass({
     if (this.props.path == "/") {
 
       var divContainer = {
-        border: '1px solid',
+        border: '2px solid',
         // borderRadius: '3px',
         fontWeight: '600',
         color: this.props.light ? 'rgba(0, 0, 0, 0.7)': 'rgba(255, 255, 255, 0.8)',
         borderColor: this.props.light ? 'rgba(0, 0, 0, 0.3)': 'rgba(255, 255, 255, 0.3)',
-        backgroundColor: this.props.light ? 'rgba(0, 0, 0, 0.2)': 'rgba(255, 255, 255, 0.2)',
+        backgroundColor: this.props.light ? 'rgba(0, 0, 0, 0.1)': 'rgba(255, 255, 255, 0.1)',
         transition: 'color 0.5s ease, backgroundColor 0.5s ease',
         width: '25%',
         height: '50px',
         margin: '10px',
         display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center'
+        alignItems: 'center',
+        justifyContent: 'center'
       }
 
       var anchorStyle = {
@@ -96,7 +96,7 @@ var Index = React.createClass({
       		<a style={anchorStyle} href="https://github.com/alexoviedo999">
       			<div style={divContainer} className="mt2 m2 cardText btn btn-outline">Github</div>
       		</a>
-      		<a style={anchorStyle} href="https://alejandrooviedo.com">
+      		<a style={anchorStyle} href="http://tumblr.alexoviedo999.com/">
       			<div style={divContainer} className="mt2 m2 cardText btn btn-outline">Tumblr</div>
     		  </a>
 			  </div>

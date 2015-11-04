@@ -37,8 +37,8 @@ var Visual = React.createClass({
     }
 
     let divContainer = {
-      border: '1px solid #FF4136',
-      borderRadius: '3px',
+      border: '2px solid #FF4136',
+      // borderRadius: '3px',
       fontWeight: '600',
       color: '#FF4136',
       width: '25%',
