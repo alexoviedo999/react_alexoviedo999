@@ -13,7 +13,7 @@ var Visual = React.createClass({
 
     let styleH1 = {
       'font-size': '35px',
-      'text-align': 'center' 
+      'text-align': 'center'
     }
 
     let cardStyle = {
@@ -74,6 +74,9 @@ var Visual = React.createClass({
         </a>
         <a style={anchorStyle} href="http://alexoviedo999.github.io/cardboard-1/5/">
           <div style={divContainer} className="p2 m2 cardText">Space Mecca</div>
+        </a>
+        <a style={anchorStyle} href="http://p5-interactive.herokuapp.com/play/arcs">
+          <div style={divContainer} className="p2 m2 cardText">Sound Arcs</div>
         </a>
         <a style={anchorStyle} href="http://p5-interactive.herokuapp.com/practice">
           <div style={divContainer} className="p2 m2 cardText">Discus Tunes</div>
