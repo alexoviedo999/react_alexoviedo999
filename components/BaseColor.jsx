@@ -92,7 +92,7 @@ class BaseColor extends React.Component {
 
   componentDidMount () {
     this.updateHSL(),
-    this.interval = setInterval(this.tick, 100);
+    this.interval = setInterval(this.tick, 50);
   }
 
   componentWillUnmount (){
@@ -121,10 +121,11 @@ class BaseColor extends React.Component {
 
   render () {
     let base = this.state.base;
-    let hue = this.state.hue;
+    // let hue = this.state.hue;
+    let hue = this.state.secondsElapsed;
     let saturation = this.state.saturation;
     let lightness = this.state.lightness;
-    console.log(this.state.secondsElapsed);
+    // console.log(this.state.secondsElapsed);
 
     return (
       <form onSubmit={this.handleSubmit}>
@@ -139,8 +140,8 @@ class BaseColor extends React.Component {
           </div>
           <div className='sm-flex mxn2 no-select'>
             <div className='flex-auto px2'>
-              <label className='h5 bold block'>Hue {this.state.secondsElapsed}&deg;</label>
-              <input type='range' value={this.state.secondsElapsed}
+              <label className='h5 bold block'>Hue {hue}&deg;</label>
+              <input type='range' defaultValue={hue}
                 className='col-12 dark-gray range-light' />
             </div>
             <div className='flex-auto px2'>
@@ -167,4 +168,4 @@ class BaseColor extends React.Component {
 
 }
 
-export default BaseColor
+export default BaseColor;

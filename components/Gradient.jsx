@@ -20,8 +20,7 @@ class Gradient extends React.Component {
     this.changeLighten = this.changeLighten.bind(this)
     this.changeHueShift = this.changeHueShift.bind(this)
     this.linearGradient = this.linearGradient.bind(this)
-    this.updateUrl = _.debounce(function() {
-      console.log('updateUrl')
+    this.updateUrl = _.debounce(function () {
       let params = qs.stringify({
         base: this.state.base,
         hueShift: this.state.hueShift,
@@ -102,7 +101,6 @@ class Gradient extends React.Component {
     return (
       <div>
         <Background {...this.props} gradient={gradient} light={light}>
-
           <Header {...this.props} light={light}/>
           <RouteHandler {...this.props} light={light} />
             {/*<Footer {...this.props} />*/}
@@ -155,9 +153,6 @@ class Gradient extends React.Component {
     )
   }
 }
-
-/*
-*/
 
 
 export default Gradient
