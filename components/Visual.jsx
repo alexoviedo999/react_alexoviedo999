@@ -68,7 +68,7 @@ var Visual = React.createClass({
       <div className="visualCards">
         <section style={sectionStyle} className="flex col-12 lg-col-8 sm-col-8 md-col-8 m1">
           <div className="h3 left">
-            <p>This page highlights some of the  2D, 3D, and VR projects I&#8217;ve worked on.</p>
+            <p>These are some of my projects.</p>
           </div>
         </section>
         <div style={flexContainer} className="center">
@@ -83,6 +83,9 @@ var Visual = React.createClass({
         </a>
         <a style={anchorStyle} href="http://p5-interactive.herokuapp.com/practice">
           <div style={divContainer} className="p2 m2 cardText btn btn-outline">Discus Tunes</div>
+        </a>
+        <a style={anchorStyle} href="http://jsdistill.alexoviedo999.com/">
+          <div style={divContainer} className="p2 m2 cardText btn btn-outline">JS Distill</div>
         </a>
       </div>
     </div>

@@ -91,7 +91,7 @@ var Index = React.createClass({
         </section>
         <div style={flexContainer} className="center">
       		<a style={anchorStyle} href="/visual">
-      			<div style={divContainer}  className="m2 cardText btn btn-outline">Visual Play</div>
+      			<div style={divContainer}  className="m2 cardText btn btn-outline">Projects</div>
       		</a>
       		<a style={anchorStyle} href="https://github.com/alexoviedo999">
       			<div style={divContainer} className="mt2 m2 cardText btn btn-outline">Github</div>
