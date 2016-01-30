@@ -96,7 +96,7 @@ var Index = React.createClass({
       		<a style={anchorStyle} href="https://github.com/alexoviedo999">
       			<div style={divContainer} className="mt2 m2 cardText btn btn-outline">Github</div>
       		</a>
-      		<a style={anchorStyle} href="http://tumblr.alexoviedo999.com/">
+      		<a style={anchorStyle} href="http://alexoviedo999.tumblr.com//">
       			<div style={divContainer} className="mt2 m2 cardText btn btn-outline">Tumblr</div>
     		  </a>
 			  </div>

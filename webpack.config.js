@@ -2,6 +2,9 @@
 var StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin')
 var data = require('./src/data')
 
+//npm start -- to start dev server
+//npm run prod - for production
+
 module.exports = {
   entry: './entry.js',
 
