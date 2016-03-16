@@ -84,7 +84,7 @@ var Visual = React.createClass({
         <a style={anchorStyle} href="http://p5-interactive.herokuapp.com/practice">
           <div style={divContainer} className="p2 m2 cardText btn btn-outline">Discus Tunes</div>
         </a>
-        <a style={anchorStyle} href="http://jsdistill.alexoviedo999.com/">
+        <a style={anchorStyle} href="https://alexoviedo999.gitbooks.io/js-distill/content/">
           <div style={divContainer} className="p2 m2 cardText btn btn-outline">JS Distill</div>
         </a>
       </div>

@@ -4,7 +4,7 @@ var data = require('./src/data')
 
 //npm start -- to start dev server
 //npm run prod - for production
-// put index and bundle files in the react_alexoviedo999 folders in the respective alexoviedo999.github.io folders
+// after 'npm run prod' put index and bundle files in the react_alexoviedo999 folders in the respective alexoviedo999.github.io folders then git commit within react_alexoviedo999 and alexoviedo999.github.io.
 
 module.exports = {
   entry: './entry.js',
