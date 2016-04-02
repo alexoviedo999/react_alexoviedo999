@@ -61,7 +61,7 @@ var Index = React.createClass({
 
       var anchorStyle = {
         display: 'inline-block',
-        height: '100%',
+        // height: '100%',
         textDecoration: 'none',
         color: this.props.light ? 'rgba(0, 0, 0, 0.8)': 'rgba(255, 255, 255, 0.8)',
         fontWeight: 700,

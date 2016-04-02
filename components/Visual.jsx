@@ -51,7 +51,7 @@ var Visual = React.createClass({
 
     let anchorStyle = {
       display: 'inline-block',
-      height: '100%',
+      // height: '100%',
       textDecoration: 'none'
     }
 
