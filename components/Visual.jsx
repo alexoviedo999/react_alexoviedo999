@@ -72,23 +72,26 @@ var Visual = React.createClass({
           </div>
         </section>
         <div style={flexContainer} className="center">
-        <a style={anchorStyle} href="http://alexoviedo999.github.io/cardboard-1/4/">
-          <div style={divContainer} className="p2 m2 cardText btn btn-outline">Mirror Sky</div>
-        </a>
-        <a style={anchorStyle} href="http://alexoviedo999.github.io/cardboard-1/5/">
-          <div style={divContainer} className="p2 m2 cardText btn btn-outline">Space Mecca</div>
-        </a>
-        <a style={anchorStyle} href="http://p5-interactive.herokuapp.com/play/arcs">
-          <div style={divContainer} className="p2 m2 cardText btn btn-outline">Sound Arcs</div>
-        </a>
-        <a style={anchorStyle} href="http://p5-interactive.herokuapp.com/practice">
-          <div style={divContainer} className="p2 m2 cardText btn btn-outline">Discus Tunes</div>
-        </a>
-        <a style={anchorStyle} href="https://alexoviedo999.gitbooks.io/js-distill/content/">
-          <div style={divContainer} className="p2 m2 cardText btn btn-outline">JS Distill</div>
-        </a>
+          <a style={anchorStyle} href="https://alexoviedo999.gitbooks.io/js-distill/content/">
+            <div style={divContainer} className="p2 m2 cardText btn btn-outline">JS Distill</div>
+          </a>
+          <a style={anchorStyle} href="http://alexoviedo999.github.io/vr-carpet-ride/tron-world/">
+            <div style={divContainer} className="p2 m2 cardText btn btn-outline">Tron World</div>
+          </a>
+          <a style={anchorStyle} href="http://alexoviedo999.github.io/cardboard-1/4/">
+            <div style={divContainer} className="p2 m2 cardText btn btn-outline">Mirror Sky</div>
+          </a>
+          <a style={anchorStyle} href="http://alexoviedo999.github.io/cardboard-1/5/">
+            <div style={divContainer} className="p2 m2 cardText btn btn-outline">Space Mecca</div>
+          </a>
+          <a style={anchorStyle} href="http://p5-interactive.herokuapp.com/play/arcs">
+            <div style={divContainer} className="p2 m2 cardText btn btn-outline">Sound Arcs</div>
+          </a>
+          <a style={anchorStyle} href="http://p5-interactive.herokuapp.com/practice">
+            <div style={divContainer} className="p2 m2 cardText btn btn-outline">Discus Tunes</div>
+          </a>
+        </div>
       </div>
-    </div>
     )
   }
 })
