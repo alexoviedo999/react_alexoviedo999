@@ -8,10 +8,10 @@ class BaseColor extends React.Component {
     super ()
     this.state = {
       base: '#0074D9',
-      hue: 205,
+      hue: 255,
       saturation: 100,
       lightness: 60,
-      secondsElapsed: 205,
+      secondsElapsed: 225,
       countUp: true
     }
 
